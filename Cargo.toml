@@ -1,0 +1,22 @@
+[package]
+name = "mad-rust-mmo7-driver"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+rusb = "0.9.1"
+enigo = "0.0.14"
+thread-priority = "0.8.2"
+
+util = { git = "https://github.com/Aytixel/mad-rust-util", package = "mad-rust-util" }
+
+tokio = { version = "1.19.2", features = ["full"] }
+hashbrown = "0.12.1"
+serde = { version = "1.0.137", features = ["derive"] }
+
+[build-dependencies]
+winres = "0.1.12"
+
+[package.metadata.winres]
+FileDescription = "Mad Rust - MMO7 driver"
