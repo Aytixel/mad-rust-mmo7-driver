@@ -12,8 +12,8 @@ thread-priority = "0.8.2"
 util = { git = "https://github.com/Aytixel/mad-rust-util", package = "mad-rust-util" }
 
 tokio = { version = "1.19.2", features = ["full"] }
-hashbrown = "0.12.1"
-serde = { version = "1.0.137", features = ["derive"] }
+hashbrown = "0.12.2"
+serde = { version = "1.0.139", features = ["derive"] }
 
 [build-dependencies]
 winres = "0.1.12"

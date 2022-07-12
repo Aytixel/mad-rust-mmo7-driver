@@ -494,7 +494,7 @@ dependencies = [
 [[package]]
 name = "mad-rust-util"
 version = "0.1.0"
-source = "git+https://github.com/Aytixel/mad-rust-util#ab45e9c62e4ccc42c1c501bf53569244659884ae"
+source = "git+https://github.com/Aytixel/mad-rust-util#a9903268ac974dcf1d1ea347c0234dab430f89c6"
 dependencies = [
  "barrage",
  "bincode",
