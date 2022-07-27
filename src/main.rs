@@ -432,6 +432,7 @@ async fn run_connection(
                                     ButtonConfigs::from_config(&device_config.config),
                                 );
                                 mouses_config_state_id.fetch_add(1, Ordering::SeqCst);
+                                mouses_config.save();
                             }
                             _ => {}
                         },
