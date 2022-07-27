@@ -384,8 +384,8 @@ async fn run_connection(
                     "Hat Right".to_string(),
                     "Hat Bottom".to_string(),
                     "Button 1".to_string(),
-                    "Button 2".to_string(),
                     "Precision Aim".to_string(),
+                    "Button 2".to_string(),
                     "Button 3".to_string(),
                 ],
             );
