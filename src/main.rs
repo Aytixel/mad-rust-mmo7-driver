@@ -17,6 +17,7 @@ use thread_priority::{set_current_thread_priority, ThreadPriority};
 use tokio::time::{interval, MissedTickBehavior};
 use util::config::ConfigManager;
 use util::connection::{command::*, Client, ConnectionState};
+use util::linux_x11::wait_for_x11;
 use util::thread::{kill_double, DualChannel, MutexTrait};
 use util::time::TIMEOUT_1S;
 
@@ -107,6 +108,7 @@ async fn main() {
         return;
     }
 
+    wait_for_x11();
     set_current_thread_priority(ThreadPriority::Min).ok();
 
     let client = Client::new().await;

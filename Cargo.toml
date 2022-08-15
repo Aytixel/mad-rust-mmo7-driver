@@ -1,8 +1,11 @@
 [package]
 name = "mad-rust-mmo7-driver"
+description = "This is the Mad Rust driver for the MMO7 mouse."
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
+readme = "README.md"
+license = "MIT"
 
 [dependencies]
 rusb = "0.9.1"
@@ -20,3 +23,16 @@ winres = "0.1.12"
 
 [package.metadata.winres]
 FileDescription = "Mad Rust - MMO7 driver"
+
+[package.metadata.deb]
+maintainer = "Aytixel <aytixel@gmail.com>"
+copyright = "2022, Aytixel <aytixel@gmail.com>"
+license-file = ["LICENSE", "4"]
+depends = "libxdo-dev"
+section = "utils"
+priority = "required"
+assets = [
+    ["./target/release/mad-rust-mmo7-driver", "/usr/bin/", "755"],
+    ["./README.md", "/usr/share/doc/mad-rust-mmo7-driver/README", "644"],
+]
+maintainer-scripts = "./debian/"

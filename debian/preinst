@@ -1,0 +1,17 @@
+#! /bin/sh
+
+# ensure there is the env profile
+#if ! test -d /usr/share/mad-rust-mmo7-driver
+#then
+#    sudo mkdir -p /usr/share/mad-rust-mmo7-driver
+#fi
+
+#sudo echo -e "DISPLAY=$DISPLAY\nXAUTHORITY=$XAUTHORITY" > /usr/share/mad-rust-mmo7-driver/profile.env
+
+# ensure there is the config file folder
+if ! test -d /root/.config/mad-rust
+then
+    sudo mkdir -p /root/.config/mad-rust
+fi
+ 
+#DEBHELPER#

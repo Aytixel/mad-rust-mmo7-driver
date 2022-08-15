@@ -1,6 +1,6 @@
 # Mad Rust MMO7 Driver
 
-This is the driver for the MMO7 mouse.
+This is the Mad Rust driver for the MMO7 mouse.
 
 **⚠️ Please take attention to this, Mad Rust is not an official software and potentially unstable, I am not responsible for any damage at your equipment.**
 
@@ -26,3 +26,10 @@ On Linux if you don't have libxdo installed, you will need to install it with : 
 
 On each system, it's recommended to run the driver in admin mode.
 Otherwise, it might cause some problems due to permissions.
+
+# Building installer
+
+## Debian
+
+You can build debian package by installing [cargo-deb](https://crates.io/crates/cargo-deb), and running : **"cargo deb".**
+It will create a new debian folder in the target folder, containing the .deb file created.
