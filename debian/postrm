@@ -9,11 +9,8 @@ then
     sudo rm /root/.config/mad-rust/mmo7_profiles.json
 fi
 
-sed "/exec[ ]\/usr\/bin\/mad\-rust\-mmo7\-driver[ ]\&/d" /etc/X11/xinit/xinitrc > /etc/X11/xinit/xinitrc_temp
-sudo mv /etc/X11/xinit/xinitrc_temp /etc/X11/xinit/xinitrc
-
 # clean driver env profile
-#if test -d /usr/share/mad-rust-mmo7-driver/
-#then
-#    sudo rm -r /usr/share/mad-rust-mmo7-driver/
-#fi
+if test -d /usr/share/mad-rust-mmo7-driver/
+then
+    sudo rm -r /usr/share/mad-rust-mmo7-driver/
+fi

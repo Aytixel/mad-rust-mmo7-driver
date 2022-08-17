@@ -36,3 +36,7 @@ assets = [
     ["./README.md", "/usr/share/doc/mad-rust-mmo7-driver/README", "644"],
 ]
 maintainer-scripts = "./debian/"
+
+[package.metadata.deb.systemd-units]
+unit-name = "mad-rust-mmo7-driver"
+unit-scripts = "./service/"

@@ -1,9 +1,0 @@
-#! /bin/sh
-
-#sudo mad-rust-mmo7-driver &
-
-sed "/exec[ ]\/usr\/bin\/mad\-rust\-mmo7\-driver[ ]\&/d" /etc/X11/xinit/xinitrc > /etc/X11/xinit/xinitrc_temp
-sudo mv /etc/X11/xinit/xinitrc_temp /etc/X11/xinit/xinitrc
-sudo echo "exec /usr/bin/mad-rust-mmo7-driver &" >> /etc/X11/xinit/xinitrc
-
-#DEBHELPER#

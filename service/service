@@ -1,0 +1,11 @@
+[Unit]
+Description=Mad Rust - MMO7 Driver
+
+[Service]
+User=root
+EnvironmentFile=/usr/share/mad-rust-mmo7-driver/profile.env
+ExecStart=/usr/bin/mad-rust-mmo7-driver
+Restart=on-failure
+
+[Install]
+WantedBy=graphical.target
